@@ -111,3 +111,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# download with lfs does not work anyway
+data/flights/sample.csv
+
+# pycharm
+.idea/
