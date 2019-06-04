@@ -258,7 +258,7 @@ class DataGen:
             result_frame[derived_col["field"]] = new_col
 
         if batch_number == 0:
-            result_frame.to_csv(self.options.output, index=False, mode="w")
+            result_frame.to_csv(self.options.output, index=False, header=False, mode="w")
         else:
             result_frame.to_csv(self.options.output, index=False, header=False, mode="a")
 
